@@ -2,10 +2,22 @@ const textEditor = document.querySelector(".text-editor");
 const preview = document.querySelector(".preview");
 const converter = new showdown.Converter();
 
+const renderPreview = value => {
+    const html = converter.makeHtml(value);
+    preview.innerHTML = html;
+}
+
 textEditor.addEventListener("keyup", evt => {
     const { value } = evt.target;
 
-    const html = converter.makeHtml(value)
+    window.localStorage.setItem("markdown", value);
 
-    preview.innerHTML = html;
+    renderPreview(value);
 });
+
+const storedMarkdown = window.localStorage.getItem("markdown");
+
+if (storedMarkdown){
+    textEditor.value = storedMarkdown;
+    renderPreview(storedMarkdown);
+}

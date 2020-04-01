@@ -15,7 +15,7 @@ body {
 }
 
 .text-editor {
-    float: 1;
+    flex: 1;
     padding: 30px;
     border: 0;
     resize: none;
