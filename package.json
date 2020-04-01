@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/brstkr/mark-editor-js#readme",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "showdown": "^1.9.1"
   }
 }
