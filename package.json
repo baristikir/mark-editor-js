@@ -1,0 +1,22 @@
+{
+  "name": "mark-editor",
+  "version": "1.0.0",
+  "description": "online markdown editor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brstkr/mark-editor-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brstkr/mark-editor-js/issues"
+  },
+  "homepage": "https://github.com/brstkr/mark-editor-js#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
